@@ -1,14 +1,14 @@
 /*----------------------------------------------------------------------------
 *
-*     Copyright © 2022 THALES. All Rights Reserved.
- *
+*     Copyright © 2022 - 2025 THALES. All Rights Reserved.
+*
 * -----------------------------------------------------------------------------
 * THALES MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF
 * THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
- * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
- * PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THALES SHALL NOT BE
- * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
- * MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+* TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+* PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THALES SHALL NOT BE
+* LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
+* MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
 *
 * THIS SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE OR RESALE AS ON-LINE
 * CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE
@@ -30,7 +30,7 @@
 
 
     const checkBoxIndex = 0
-    const levelIndex = 2
+    const levelIndex = 3
 
   const businessAssetsTableConfig = {
     selectable: 1,
@@ -40,6 +40,9 @@
       columns: [ 
         {
           title: 'Import?', field: 'checkbox', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', headerWordWrap: true, width: 80
+        },
+        {
+          title: 'ID', field: 'businessAssetId', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', width: 80
         },
         {
           title: 'Business Asset Name', field: 'businessAssetName', headerSort: false, headerHozAlign: 'center', hozAlign: 'center'
@@ -69,6 +72,9 @@
           title: 'Import?', field: 'checkbox', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', headerWordWrap: true, width: 80
         },
         {
+          title: 'ID', field: 'supportingAssetId', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', width: 80
+        },
+        {
           title: 'Supporting Asset Name', field: 'supportingAssetName', headerSort: false, headerHozAlign: 'center', hozAlign: 'center'
         }
       ],
@@ -91,6 +97,9 @@
       columns: [ 
         {
           title: 'Import?', field: 'checkbox', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', headerWordWrap: true, width: 80
+        },
+        {
+          title: 'ID', field: 'riskId', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', width: 80
         },
         {
           title: 'Risk Name', field: 'riskName', headerSort: false, headerHozAlign: 'center', hozAlign: 'center'
@@ -130,6 +139,9 @@ risksTableConfig.columns[levelIndex].formatter = (cell) => {
       columns: [ // Define Table Columns
         {
           title: 'Import?', field: 'checkbox', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', headerWordWrap: true, width: 80
+        },
+        {
+          title: 'ID', field: 'vulnerabilityId', headerSort: false, headerHozAlign: 'center', hozAlign: 'center', width: 80
         },
         {
           title: 'Vuln. Name', field: 'vulnerabilityName', headerSort: false, headerHozAlign: 'center'
